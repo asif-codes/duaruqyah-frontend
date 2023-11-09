@@ -2,26 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+@layer components {
+  .bg-icon-bg {
+    --tw-bg-opacity: 1;
+    background-color: rgb(232 240 245 / var(--tw-bg-opacity));
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .padding-left {
+    padding-left: 10px;
+  }
+
+  .heighwidth {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 164 91 / var(--tw-bg-opacity));
+  }
+
+  .rounded-t-2lg {
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+  }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
+  background-color: rgb(235 238 242);
+}
+
+nextjs-portal {
+  display: none;
 }
